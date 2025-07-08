@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Mitr:wght@200;300;400;500;600;700&family=Patua+One&family=Prata&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Pomodoro Time</title>
+    <link rel="icon" href="../IMAGE/Time.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="pomodoro-header">
+                <i class="fa fa-circle-exclamation"></i>
+                <p>POMOWATCH</p>
+            </div>
+        </header>
+     
+    
+        <div class="card">
+                <button class="time-option" id="pomodoro-btn"><h1>Study</h1></button>
+                <button class="time-option" id="short-btn"><h1>Short Break</h1></button>
+                <button class="time-option" id="long-btn"><h1>Long Break</h1></button>
+                <div id="Pomodoro"></div>
+                <div class="next-btn">
+                    <audio id="sound" src="../IMAGE/Click.mp3"></audio>
+                    <audio id="alarm" src="../IMAGE/Alarm.mp3"></audio>
+
+                    <button class="start">START</button>
+                    <button class="restart">RESTART</button>
+
+                    <dialog id="favDialog">
+                        <div class="modal-buttons">
+                          <button class="pomodor" id="study-modal">Set Study</button>
+                          <button class="pomodor" id="short-modal">Set Short Break</button>
+                          <button class="pomodor" id="long-modal">Set Long Break</button>
+                        </div>
+                        <p>
+                          <label id="min">
+                            Minutes:
+                            <input type="text" id="minute" placeholder="10">
+                          </label>
+
+                        </p>
+                        <div>
+                          <button id="cls">Cancel</button>
+                        </div>
+                    
+                    </dialog>
+                    
+                    <i class="fa-solid fa-gear" id="updateDetails"></i>
+                </div>
+                <H2></H2>
+        </div>
+        <div class="current-happenings">
+                <p class="situation" id="status"></p>
+        </div>
+    </div>
+
+    <script src="../JS/Script.js"></script>
+</body>
+</html>
